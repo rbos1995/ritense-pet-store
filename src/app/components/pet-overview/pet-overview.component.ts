@@ -10,16 +10,18 @@ import {PetApiService} from "../../services/pet-api.service";
 export class PetOverviewComponent implements OnInit {
 
   pets!: Pet[];
+  displayedColumns = ['id', 'name', 'status']
   constructor(
     private petApiService:PetApiService
   ) {}
 
   ngOnInit() {
-    this.filterPets()
+    this.filterPets('available')
   }
 
-  filterPets() {
-    // filter from api
-    this.pets = this.petApiService.getPetsByStatus()
+  filterPets(status: string) {
+    this.petApiService.getPetsByStatus(status).subscribe((pets) => {
+      this.pets = pets
+    })
   }
 }

@@ -1,0 +1,15 @@
+@import "../../../_colors";
+
+.heading {
+  text-align: center;
+  padding-bottom: 2em;
+  color: $primary-color-900;
+}
+
+.table {
+  background-color: $neutrals-800;
+}
+
+th {
+  color: $primary-color-300;
+}
