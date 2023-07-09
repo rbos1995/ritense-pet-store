@@ -6,22 +6,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Personal notes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The API is a little bit janky, the returning PhotoURLs are strings like 'string', '112' or '/tmp/blah/blah'. This made me change up the view of the project. 
+Instead of opting for a card based list I decided to go for a good old table to present the data.
 
-## Build
+I immediately went out of my way to create a custom palette, however not having a whole lot of experience with Angular Material Design I did not create a custom palette for Angular Material.
+This made the CSS part a little bit hacky at some places by using !important.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### time taken : 2H50M
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
