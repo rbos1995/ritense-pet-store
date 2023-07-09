@@ -2,6 +2,19 @@
   <div class="heading">
     <h1>Pet Store Manager</h1>
   </div>
+
+  <div class="button-group">
+    <mat-button-toggle-group
+    name="petFilter"
+    aria-label="Pet Filter"
+    value="available"
+    (change)="filterPets($event.value)"
+    >
+      <mat-button-toggle value="available">Available</mat-button-toggle>
+      <mat-button-toggle value="pending">Pending</mat-button-toggle>
+      <mat-button-toggle value="sold">Sold</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
   <table mat-table [dataSource]="pets" class="table">
     <div>
       <ng-container matColumnDef="id">
@@ -20,7 +33,11 @@
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr
+        mat-row
+        *matRowDef="let row; columns: displayedColumns;"
+        class="pet-row"
+      ></tr>
 
     </div>
   </table>

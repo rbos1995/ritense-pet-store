@@ -13,3 +13,39 @@
 th {
   color: $primary-color-300;
 }
+
+.mat-column-id {
+  width: 15%;
+}
+.mat-column-name {
+  width: 30%;
+}
+
+tr.pet-row:hover {
+  background-color: $neutrals-600;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.mat-button-toggle {
+  background-color: $neutrals-900;
+}
+
+.mat-button-toggle:hover {
+  background-color: $neutrals-500;
+  color: $primary-color-300 !important
+}
+.mat-button-toggle-checked {
+  background-color: $neutrals-700;
+  color: $primary-color-400 !important
+}
+
+
+
+
+

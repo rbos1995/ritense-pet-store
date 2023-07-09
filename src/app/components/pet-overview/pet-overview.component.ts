@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Pet} from "../../types/pet.model";
 import {PetApiService} from "../../services/pet-api.service";
+import {filter} from "rxjs";
 
 @Component({
   selector: 'app-pet-overview',
@@ -24,4 +25,6 @@ export class PetOverviewComponent implements OnInit {
       this.pets = pets
     })
   }
+
+  protected readonly filter = filter;
 }
