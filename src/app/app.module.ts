@@ -9,6 +9,7 @@ import {MatListModule} from "@angular/material/list";
 import {HttpClientModule} from "@angular/common/http";
 import {MatTableModule} from "@angular/material/table";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
     MatListModule,
     HttpClientModule,
     MatTableModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

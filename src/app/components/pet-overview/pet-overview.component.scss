@@ -32,6 +32,16 @@ tr.pet-row:hover {
   margin-bottom: 0.5em;
 }
 
+.mat-mdc-raised-button {
+  background-color: $primary-color-300 !important;
+  color: $primary-color-900 !important
+}
+
+.mat-mdc-raised-button:hover {
+  background-color: $neutrals-800 !important;
+  color: $primary-color-300 !important
+}
+
 .mat-button-toggle {
   background-color: $neutrals-900;
 }

@@ -14,7 +14,10 @@
       <mat-button-toggle value="pending">Pending</mat-button-toggle>
       <mat-button-toggle value="sold">Sold</mat-button-toggle>
     </mat-button-toggle-group>
+    <button mat-raised-button>Add Pet</button>
+
   </div>
+
   <table mat-table [dataSource]="pets" class="table">
     <div>
       <ng-container matColumnDef="id">
