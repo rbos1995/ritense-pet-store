@@ -14,7 +14,10 @@
       <mat-button-toggle value="pending">Pending</mat-button-toggle>
       <mat-button-toggle value="sold">Sold</mat-button-toggle>
     </mat-button-toggle-group>
-    <button mat-raised-button>Add Pet</button>
+    <button
+      mat-raised-button
+      (click)="openDialog()"
+    >Add Pet</button>
 
   </div>
 
@@ -41,7 +44,6 @@
         *matRowDef="let row; columns: displayedColumns;"
         class="pet-row"
       ></tr>
-
     </div>
   </table>
 </section>
